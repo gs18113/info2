@@ -7,6 +7,7 @@ float t;
 float[] k=new float[waveSourceMax];
 float[] w=new float[waveSourceMax];
 float[] a=new float[waveSourceMax];
+float[] T=new float[waveSourceMax];
 int[] X=new int[waveSourceMax];
 int[] Y=new int[waveSourceMax];
 
@@ -71,6 +72,7 @@ void draw(){
   text("RESET", HUDoffsetx+185, HUDoffsety-260);
   fill(255);
   stroke(255);
+  text("Wave Source:"+waveSourceCnt+"/100", HUDoffsetx+70, HUDoffsety-190);
   rect(HUDoffsetx+50+curK, HUDoffsety-150, 10, 10);
   rect(HUDoffsetx+50+curW, HUDoffsety-100, 10, 10);
   rect(HUDoffsetx+50+curA, HUDoffsety-50, 10, 10);
